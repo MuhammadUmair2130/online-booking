@@ -3,6 +3,8 @@ include 'config.php';
 include('header.php');
 ?>
 
+<div id="pre-loader"></div>
+
     <!-- home -->
     <section class="home">
 		<!-- home bg -->
@@ -14,7 +16,7 @@ include('header.php');
 		</div>
 		<!-- end home bg -->
         <!-- carousol -->
-        <div class="container-fluid">
+        
  <div class="row">
 
  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -197,6 +199,10 @@ include('header.php');
 
 
   </section>
+
+  <script>
+
+  </script>
 
 
 <?php

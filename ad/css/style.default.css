@@ -16,6 +16,16 @@ https://bootstrapious.com/p/bootstrap-4-dark-admin
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ /* #pre-loader{
+ 
+  background: #000 url(/img/home/loader.gif) no-repeat center center;
+  background-size: 15%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+
+} */
 
 
 :root {

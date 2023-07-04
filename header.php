@@ -100,9 +100,9 @@ include 'config.php';
 								<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies Categories</a>
 
 								<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-								<li><a href="#">HollyWood</a></li>
-								<li><a href="#">BollyWood</a></li>
-								<li><a href="#">LollyWood</a></li>
+								<li><a href="hollywood.php">hollyWood</a></li>
+								<li><a href="bollywood.php">BollyWood</a></li>
+								<li><a href="lollywood.php">LollyWood</a></li>
 
 								
 								</ul>
@@ -193,9 +193,9 @@ include 'config.php';
 								<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies Categories</a>
 
 								<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-								<li><a href="#">HollyWood</a></li>
-								<li><a href="#">BollyWood</a></li>
-								<li><a href="#">LollyWood</a></li>
+								<li><a href="hollywood.php">HollyWood</a></li>
+								<li><a href="bollywood.php">BollyWood</a></li>
+								<li><a href="lollywood.php">LollyWood</a></li>
 
 								
 								</ul>

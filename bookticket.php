@@ -103,20 +103,27 @@ $book_tic_fetch=mysqli_fetch_assoc($book_tic_sel);
 
 											<!-- seatings -->
 
-						<label class="mt-3" style="color:white;" class="form-label" >Enter seatings cateogary</label>
-                        <select style="background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);border:none;color:black;" class="form-control mt-3" name="ux_mov_seat" >
-                            <option selected disabled>select your seat</option>
-                                <?php
-                                $select=mysqli_query($con,"select * from tblprice");
-                                foreach($select as $data){
-                                    echo "
+						  <!-- <label class="mt-3" style="color:white;" class="form-label" >Enter seatings cateogary</label>
+                           <select style="background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);border:none;color:black;" class="form-control mt-3" name="ux_mov_seat" >
+                            <option selected disabled>select your seat</option> -->
 
-                                    <option value=$data[id]>$data[economy]</option>
-                                    <option value=$data[id]>$data[premium]</option>
-                                    ";
+
+                            <p style="color:white;" class="mt-3">Choose Your Seat Class ?</p>
+                                <?php
+                                $mov_price=mysqli_query($con,"select * from tblprice where movie_name_price='$book_tic_fetch[movie_name]'");
+                                foreach($mov_price as $data){
+                                    ?>
+                                    <select  name="ux_mov_seat" class="form-control"   style="background-image:   -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);border:none;  color:black;">
+												<option disabled selected>Select Your Seat !</option>
+												<option>Economy : <?php echo $data['economy']; ?></option>
+												<option>premium : <?php echo $data['premium']; ?></option>
+												
+												</select>
+                                        <?php
+
                                 }
                                 ?>                               
-                        </select> 
+                        
                                  <!-- seatings -->
 
 

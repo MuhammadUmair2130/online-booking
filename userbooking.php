@@ -66,7 +66,7 @@ foreach ($ticket_book as $ticket)
 		<h1 style="font-family:ubantu;"><?php  echo $ticket['user_movie_name'] ?></h1>
 		<h1 style="font-family:cursive;"><?php  echo $ticket['user_movie_cinema'] ?></h1>
 		<p class="h4"><?php  echo $ticket['user_movie_dur'] ?></p>
-		<h2><?php  echo $ticket['user_price']." X ".$ticket['user_seat']." /Rs" ?></h2>
+		<h2><?php  echo $ticket['user_price']." X ".$ticket['user_seat'] ?></h2>
     </div>
      
     <div class="col-sm-3">

@@ -33,7 +33,7 @@ include 'adh.php';
                         <label class="form-label" >Enter cinema Name</label>
                         <select  class="form-control" name="cinema_name" >
                             <option selected disabled>select</option>
-                                <?php
+                                  <?php
                                 $select=mysqli_query($con,"select * from tblcinema");
                                 foreach($select as $data){
                                     echo "
