@@ -34,6 +34,7 @@ include 'config.php';
 	<title>Online Movie Booking System – Online Movies, TV Shows & Cinema Booking</title>
 	<!-- custom css for header -->
 <style>
+	
 	.header__nav-link{
 		font-size: 11px !important;
 	}
@@ -55,6 +56,38 @@ include 'config.php';
 #main__logo:hover{
 	color:#d63384;
 	transition:1s;
+}
+#animtxt{
+
+	position: relative;
+	font-size:14vw;
+	color:#9c8381;
+	-webkit-text-stroke:0.3vw grey;
+	
+	
+	/* -webkit-text-stroke:0.3vw #383d52;	 */
+}
+#animtxt::before{
+	content:attr(data-text);
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	color:;
+	overflow: hidden;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate {
+	0%,10%,100%
+	{
+		width: 0;
+	}
+	70%,90%
+	{
+		width: 100%;
+	}
+	
 }
 /* main logo css */
 
