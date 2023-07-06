@@ -57,36 +57,34 @@ include 'config.php';
 	color:#d63384;
 	transition:1s;
 }
-#animtxt{
 
-	position: relative;
-	font-size:14vw;
-	color:#9c8381;
-	-webkit-text-stroke:0.3vw grey;
+
+.anim{
 	
-	
-	/* -webkit-text-stroke:0.3vw #383d52;	 */
-}
-#animtxt::before{
-	content:attr(data-text);
 	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	color:;
-	overflow: hidden;
-	animation: animate 6s linear infinite;
+	top:3%;
+	left:35%;
+	transform:translate(-50%,-50%);
+	font-size:60px;
+	color:transparent;
+	background-image:linear-gradient(black,#fff);
+	font-family: 'Ubuntu';
+	border-right: 3px solid;	
+	background-repeat:no-repeat;
+	-webkit-background-clip:text;
+	background-position:-750px 0;
+	animation: animate 3s linear infinite alternate;
+	/* -webkit-text-stroke:1px #fff; */
 }
-@keyframes animate {
-	0%,10%,100%
+@keyframes animate{
+	100%
 	{
-		width: 0;
+		background-position:0 0;	
 	}
-	70%,90%
+	/* 70%,90%
 	{
 		width: 100%;
-	}
+	} */
 	
 }
 /* main logo css */

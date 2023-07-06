@@ -10,7 +10,7 @@ include('header.php');
     <!-- home -->
     <section class="home">
 
-	<h1 id="animtxt" >Book Your Tickets Online.......</h1>
+	<h1 class="anim">Book Your Tickets Online... </h1>
 		<!-- home bg -->
 		<div class="owl-carousel home__bg">
 			<div class="item home__cover" data-bg="img/home/home__bg.jpg"></div>
